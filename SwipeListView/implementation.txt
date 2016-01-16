@@ -1,0 +1,6 @@
+SwipeListView实现原理:
+
+1.实现自定义的ConvertView,包中间是内容view,超出屏幕右侧是Menu
+2.侧滑滑动ConverView,当放手时计算当前速度来决定最终状态是否需要完成侧滑或者返回关闭状态
+3.当Menu打开时,判断按下的位置是否在Menu上,如果在Menu上则继续分发,如果不在Menu则拦截该事件并关闭Menu,且后续的事件全部消费(ListView的特性,滑动会直接分发到onTouch)
+

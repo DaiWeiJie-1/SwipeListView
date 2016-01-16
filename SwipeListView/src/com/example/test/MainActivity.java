@@ -136,7 +136,7 @@ public class MainActivity extends Activity {
 				@Override
 				public void onClick(View v) {
 					Log.d("click","mDelTextView click");
-//					mSwipeMenuListView.closeOpenedMenu();
+					mSwipeMenuListView.closeOpenedMenu();
 				}
 			});
 			
